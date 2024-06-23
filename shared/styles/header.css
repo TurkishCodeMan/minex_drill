@@ -1,0 +1,15 @@
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 25px;
+    background: inherit;
+    clip-path: polygon(0 69%, 18% 70%, 42% 70%, 68% 84%, 85% 89%, 100% 92%, 100% 94%, 60% 88%, 33% 88%, 16% 100%, 0 100%, 0% 85%);
+    border-bottom: 5px solid #FFD700;
+    z-index: -999;
+    overflow: hidden;
+    transform: translateX(-50%);
+    transform-origin: bottom left;
+}

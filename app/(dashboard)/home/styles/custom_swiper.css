@@ -1,0 +1,21 @@
+/* swiper-custom.css */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black; /* Siyah renk */
+  opacity: 0.5; /* Şeffaflık */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1; /* Hover durumu için şeffaflık kaldırıldı */
+}
+
+.swiper-pagination-bullet {
+  background: black; /* Siyah renk */
+  opacity: 0.5; /* Şeffaflık */
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1; /* Aktif nokta için şeffaflık kaldırıldı */
+}
