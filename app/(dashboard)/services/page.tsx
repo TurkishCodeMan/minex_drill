@@ -4,17 +4,17 @@ const servicesData: any[] = [
   {
     title: 'Wireline Yüzey Maden Karotlu Sondajlar',
     description: 'Wireline Yüzey Maden Karotlu Sondajlar, yüzeyde gerçekleştirilen karotlu sondaj hizmetleridir.',
-    imageUrl: '/c4.jpeg',
+    imageUrl: '/a1.jpeg',
   },
   {
     title: 'Wireline Yer altı Maden Karotlu Sondajlar',
     description: 'Wireline Yer altı Maden Karotlu Sondajlar, yer altında gerçekleştirilen karotlu sondaj hizmetleridir.',
-    imageUrl: '/c5.jpeg',
+    imageUrl: '/a14.jpeg',
   },
   {
     title: 'Havalı ve Çamurlu Rotary Sondajlar',
     description: 'Havalı ve Çamurlu Rotary Sondajlar, hava ve çamur kullanılarak gerçekleştirilen döner sondaj hizmetleridir.',
-    imageUrl: '/c6.jpeg',
+    imageUrl: '/a4.jpeg',
   },
   {
     title: 'Konvansiyonel Karotlu Sondajlar',
@@ -34,7 +34,7 @@ const servicesData: any[] = [
   {
     title: 'Jeoteknik Sondaj Hizmetlerimiz',
     description: 'Jeoteknik Sondaj Hizmetlerimiz, jeoteknik amaçlarla gerçekleştirilen sondaj hizmetleridir.',
-    imageUrl: '/c11.jpeg',
+    imageUrl: '/a6.jpeg',
   },
 ];
 

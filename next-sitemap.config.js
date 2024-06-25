@@ -7,8 +7,7 @@ module.exports = {
         '/manifest.webmanifest', 
         '/tags/*',
         '/tr',
-        '/en',
-       
+        '/en'
     ],
     generateRobotsTxt: true,
     generateIndexSitemap: false,
@@ -26,13 +25,10 @@ module.exports = {
         await config.transform(config, '/contact'),
         await config.transform(config, '/isg'),
         await config.transform(config, '/machines'),
-
         await config.transform(config, '/quality'),
-        await config.transform(config, '/services'),
-
+        await config.transform(config, '/services')
     ],
     additionalSitemaps: [
-        'https://www.cukurderesondaj.com.tr/my-custom-sitemap-1.xml',
-        'https://www.cukurderesondaj.com.tr/my-custom-sitemap-2.xml',
+        'https://www.minexdrill.com/sitemap.xml',
     ],
 }

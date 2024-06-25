@@ -18,14 +18,14 @@ export default function Home() {
         navigation
         keyboard={{ enabled: true }}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 10000, disableOnInteraction: true }}
+        autoplay={{ delay: 12000, disableOnInteraction: true }}
         className="relative z-10"
       >
         <SwiperSlide
           className="bg-cover  min-h-screen flex items-center justify-center md:bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/c15.jpeg')",
+              "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/a7.jpeg')",
           }}
         >
           <div className="flex flex-col overflow-hidden">
@@ -60,7 +60,7 @@ export default function Home() {
           className="bg-cover min-h-screen flex items-center justify-center md:bg-center"
           style={{
             backgroundImage:
-              "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/c6.jpeg')",
+              "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/c15.jpeg')",
           }}
         >
           <div className="flex flex-col overflow-hidden">

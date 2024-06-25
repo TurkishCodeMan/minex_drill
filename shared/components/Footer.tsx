@@ -23,6 +23,8 @@ export default function Footer() {
                         <li className="mb-2">Adres: OSTİM OSB. MAHALLESİ 1125/2. SOKAK NO:10</li>
                         <li className="mb-2">Ostim/Yenimahalle, Ankara - Türkiye</li>
                         <li className="mb-2">Tel: 0312 354 77 71</li>
+                        <li className="mb-2">Fax: 0312 354 77 71</li>
+
                         <li className="mb-2">GSM: 0501 103 06 18</li>
                         <li className="mb-2">Mail: <a href="mailto:minex@minexdrill.com" className="hover:underline">minex@minexdrill.com</a></li>
                     </ul>
@@ -30,10 +32,10 @@ export default function Footer() {
                 <div>
                     <h2 className="text-lg font-bold mb-4">Bizi Arayın</h2>
                     <div className="flex space-x-4">
-                        <a href="https://www.facebook.com/p/%C3%87ukurdere-Sondaj-100063763801216/?paipv=0&eav=AfYauWIqmg3KpqGCpDdwtQOPk0Sl7-4VgLy0b2lvRhAbzTce180wW6wekfP_K1hb1A4&_rdr" className="text-2xl hover:text-red-500"><FaFacebook /></a>
-                        <a href="https://www.facebook.com/p/%C3%87ukurdere-Sondaj-100063763801216/?paipv=0&eav=AfYauWIqmg3KpqGCpDdwtQOPk0Sl7-4VgLy0b2lvRhAbzTce180wW6wekfP_K1hb1A4&_rdr" className="text-2xl hover:text-red-500"><FaTwitter /></a>
-                        <a href="https://www.instagram.com/cukurderesondaj/" className="text-2xl hover:text-red-500"><FaInstagram /></a>
-                        <a href="https://www.linkedin.com/company/%C3%A7ukurdere-sondaj?originalSubdomain=tr" className="text-2xl hover:text-red-500"><FaLinkedin /></a>
+                        <a href="" className="text-2xl hover:text-red-500"><FaFacebook /></a>
+                        <a href="" className="text-2xl hover:text-red-500"><FaTwitter /></a>
+                        <a href="" className="text-2xl hover:text-red-500"><FaInstagram /></a>
+                        <a href="" className="text-2xl hover:text-red-500"><FaLinkedin /></a>
                     </div>
                 </div>
             </div>
