@@ -9,7 +9,7 @@ const servicesData: any[] = [
   {
     title: 'Wireline Yer altı Maden Karotlu Sondajlar',
     description: 'Wireline Yer altı Maden Karotlu Sondajlar, yer altında gerçekleştirilen karotlu sondaj hizmetleridir.',
-    imageUrl: '/a14.jpeg',
+    imageUrl: '/a14.png',
   },
   {
     title: 'Havalı ve Çamurlu Rotary Sondajlar',
