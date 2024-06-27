@@ -27,7 +27,7 @@ const AboutUs = () => {
               <div>
                 <h3 className="text-xl font-semibold text-gray-700 mb-4">Ne Yapıyoruz?</h3>
                 <p className="text-gray-600 mb-6">
-                  Minex Drill, geniş bir yelpazede sondaj hizmetleri sunmaktadır. Bunlar arasında maden sondajı, jeotermal sondaj, su sondajı bulunmaktadır.
+                  Minex Drill, geniş bir yelpazede sondaj hizmetleri sunmaktadır. Bunlar arasında maden sondajı, RC ters sirkülasyon sondajı bulunmaktadır.
                 </p>
                 <p className="text-gray-600 mb-6">
                   Projelerimizde, çevresel sürdürülebilirliği ve iş güvenliğini ön planda tutuyoruz. Her projede, yerel ve uluslararası standartlara uygun hareket ediyoruz.

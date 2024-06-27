@@ -46,7 +46,7 @@ export default function Home() {
                   className="relative inline-block mt-8 px-6 py-3 font-semibold text-white overflow-hidden group"
                 >
                   <span className="relative z-10 text-md">Makinalarımız</span>
-                  <div className="absolute hover:bg-black rounded-md inset-0 bg-red-500 transition-all duration-200 ease-in-out clip-path-right group-hover:clip-path-full"></div>
+                  <div className="absolute hover:bg-black rounded-md inset-0 bg-red-800 transition-all duration-200 ease-in-out clip-path-right group-hover:clip-path-full"></div>
                 </a>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Home() {
                   className="relative inline-block mt-8 px-6 py-3 font-semibold text-white overflow-hidden group"
                 >
                   <span className="relative z-10 text-md">Detaylar</span>
-                  <div className="absolute hover:bg-black rounded-md inset-0 bg-red-500 transition-all duration-200 ease-in-out clip-path-right group-hover:clip-path-full"></div>
+                  <div className="absolute hover:bg-black rounded-md inset-0 bg-red-800 transition-all duration-200 ease-in-out clip-path-right group-hover:clip-path-full"></div>
                 </a>
               </div>
             </div>
