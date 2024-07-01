@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-red-800 mb-8">{t('title')}</h2>
         <div className="max-w-lg mx-auto">
-          <form>
+          <form action="https://formsubmit.co/minex@minexdrill.com">
             <div className="mb-6">
               <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
                 {t('nameLabel')}
