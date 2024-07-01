@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
 import { useTranslations } from 'next-intl';
 
-const QualityPolicy = () => {
-  const t = useTranslations('qualityPolicy');
+const Vision = () => {
+  const t = useTranslations('vision');
 
   return (
     <div className="bg-white py-16 min-h-screen">
@@ -12,21 +12,21 @@ const QualityPolicy = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('qualityUnderstanding')}</h3>
-              {t.raw('qualityUnderstandingText').map((text: string, index: number) => (
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('visionTitle')}</h3>
+              {t.raw('visionText').map((text: any, index: any) => (
                 <p key={index} className="text-gray-600 mb-6">{text}</p>
               ))}
             </div>
           </div>
           <div>
-            <img src="/c8.jpeg" alt={t('title')} className="rounded-lg" />
+            <img src="/a6.jpeg" alt="Minex Drill" className="rounded-lg" />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <div className="flex flex-col justify-center">
             <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('qualityStandards')}</h3>
-              {t.raw('qualityStandardsText').map((text: string, index: number) => (
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('missionTitle')}</h3>
+              {t.raw('missionText').map((text: any, index: any) => (
                 <p key={index} className="text-gray-600 mb-6">{text}</p>
               ))}
             </div>
@@ -37,4 +37,4 @@ const QualityPolicy = () => {
   );
 };
 
-export default QualityPolicy;
+export default Vision;

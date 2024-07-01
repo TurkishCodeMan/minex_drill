@@ -1,11 +1,11 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaFax, FaMobileAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Footer() {
     return (
         <footer className="bg-black text-white py-10 px-5">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h2 className="text-lg font-bold mb-4"><img src='/logo_white.png'/></h2>
+                    <h2 className="text-lg font-bold mb-4"><img src='/logo_white.png' alt="Minex Drill Logo"/></h2>
                     <p>Minex Drill yurtiçi ve yurtdışı projelerinde deneyimli ve kendisini mesleğine adamış operasyon ekibimizle hizmet vermektedir. Uluslararası standartlarda sondaj hizmetleri sunuyoruz.</p>
                 </div>
                 <div>
@@ -20,13 +20,12 @@ export default function Footer() {
                 <div>
                     <h2 className="text-lg font-bold mb-4">İletişim</h2>
                     <ul>
-                        <li className="mb-2">Adres: OSTİM OSB. MAHALLESİ 1125/2. SOKAK NO:10</li>
+                        <li className="mb-2"><FaMapMarkerAlt className="inline-block mr-2"/> Adres: OSTİM OSB. MAHALLESİ 1125/2. SOKAK NO:10</li>
                         <li className="mb-2">Ostim/Yenimahalle, Ankara - Türkiye</li>
-                        <li className="mb-2">Tel: 0312 354 77 71</li>
-                        <li className="mb-2">Fax: 0312 354 77 71</li>
-
-                        <li className="mb-2">GSM: 0501 103 06 18</li>
-                        <li className="mb-2">Mail: <a href="mailto:minex@minexdrill.com" className="hover:underline">minex@minexdrill.com</a></li>
+                        <li className="mb-2"><FaPhone className="inline-block mr-2"/> Tel: 0312 354 77 71</li>
+                        <li className="mb-2"><FaFax className="inline-block mr-2"/> Fax: 0312 354 77 71</li>
+                        <li className="mb-2"><FaMobileAlt className="inline-block mr-2"/> GSM: 0501 103 06 18</li>
+                        <li className="mb-2"><FaEnvelope className="inline-block mr-2"/> Mail: <a href="mailto:minex@minexdrill.com" className="hover:underline">minex@minexdrill.com</a></li>
                     </ul>
                 </div>
                 <div>

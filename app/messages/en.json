@@ -1,0 +1,574 @@
+{
+  "about": {
+    "title": "About Us",
+    "whoWeAreTitle": "Who Are We?",
+    "whoWeAre": [
+      "Minex Drill is a company managed by a team specialized in domestic and international projects, providing drilling services at international standards.",
+      "Our expert team uses the latest technology and innovative methods to complete our clients' projects on time and within budget.",
+      "Our mission is to remain a leader in the industry and provide our clients with the highest quality service."
+    ],
+    "whatWeDoTitle": "What Do We Do?",
+    "whatWeDo": [
+      "Minex Drill offers a wide range of drilling services, including mineral drilling and RC reverse circulation drilling.",
+      "In our projects, we prioritize environmental sustainability and work safety. We comply with local and international standards in every project.",
+      "Our innovative approach and technological infrastructure aim to provide our clients with the best solutions."
+    ]
+  },
+  "header": {
+    "home": "HOME",
+    "corporate": "CORPORATE",
+    "about": "ABOUT US",
+    "quality": "QUALITY POLICY",
+    "visionMission": "VISION AND MISSION",
+    "services": "SERVICES",
+    "machines": "MACHINES",
+    "isg": "OHS AND ENVIRONMENT",
+    "contact": "CONTACT"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your Full Name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Your Email Address",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your Message",
+    "submitButton": "Submit"
+  },
+  "isgveCevre": {
+    "title": "Our Occupational Health, Safety, and Environmental Policy",
+    "healthSafetyTitle": "Occupational Health and Safety",
+    "healthSafetyText": "At Minex Drill, we are committed to maintaining the highest level of occupational health and safety. We regularly conduct training sessions and fully comply with safety standards to ensure the safety of all our employees.",
+    "environmentTitle": "Our Environmental Policy",
+    "environmentText": "Environmental protection is one of Minex Drill's primary goals. While carrying out our activities, we take all necessary measures to avoid harming the environment and to conserve natural resources. By adopting sustainable environmental policies, we aim to leave a clean environment for future generations."
+  },
+
+  "machines": {
+    "title": "Our Machines",
+    "details": "Details",
+    "rodDiameter": "Rod Diameter",
+    "depth": "Depth",
+    "depthFt": "Depth (ft)",
+    "machinesData": [
+      {
+        "name": "MD-2500",
+        "imageUrl": "/md2500.jpeg",
+        "capacities": {
+          "rods": [
+            {
+              "type": "PWL",
+              "diameter": "114,3 mm",
+              "depth": "1,000 m",
+              "depth_ft": "3,280 ft"
+            },
+            {
+              "type": "HWL",
+              "diameter": "88,9 mm",
+              "depth": "1,900 m",
+              "depth_ft": "6,232 ft"
+            },
+            {
+              "type": "NWL",
+              "diameter": "69,9 mm",
+              "depth": "2,500 m",
+              "depth_ft": "8,200 ft"
+            },
+            {
+              "type": "BWL",
+              "diameter": "54 mm",
+              "depth": "3,000 m",
+              "depth_ft": "9,840 ft"
+            }
+          ]
+        },
+        "details": {
+          "motor": {
+            "motor": "Cummins, Ford, Iveco, Volvo",
+            "motor_capacity": "8.9 Lt",
+            "max_power": "400Hp @2100 rpm",
+            "fuel_tank_capacity": "400 Lt",
+            "emission_certificate": "Tier3-4 Certified",
+            "motor_torque": "1700 Nm @ 1300 rpm",
+            "control_unit": "Electronic Control (ECM)"
+          },
+          "hydraulic_system": {
+            "main_hydraulic_pump": {
+              "type": "Variable flow axial piston - Load Sensing",
+              "flow_rate": "160cc",
+              "pressure": "350 bar"
+            },
+            "secondary_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "45 cc",
+              "pressure": "350 bar"
+            },
+            "third_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "28 cc",
+              "pressure": "280 bar"
+            },
+            "fourth_pump": {
+              "type": "GEAR",
+              "flow_rate": "19 cc",
+              "pressure": "200 bar"
+            },
+            "fifth_pump": {
+              "type": "GEAR",
+              "flow_rate": "8 cc",
+              "pressure": "200 bar"
+            },
+            "wireline_hydromotor": "400 cc",
+            "mud_pump_hydromotor": "160 cc",
+            "main_winch_hydromotor": "80 cc",
+            "hydraulic_control_panels": "HYDRAULIC ELEMENTS FOR PANEL",
+            "hydraulic_tank_capacity": "400 LT",
+            "cooler": "DOUBLE SYSTEM COOLING",
+            "filters": "TANK RETURN, SUCTION, PRESSURE, MORSET"
+          },
+          "morse_module": {
+            "rotation_motor": "160 cc",
+            "morse_inner_diameter": "119mm",
+            "jaw": "7 pieces",
+            "jaw_holding_force": "184.700 N",
+            "jaw_type": "HYDRAULIC CLAMP SPRING OPEN"
+          },
+          "mechanical_transmission": {
+            "main_gear_ratio": "2:1",
+            "gearbox_ratios": [
+              {
+                "gear": "1st GEAR",
+                "ratio": "6,27:1",
+                "speed": "160rpm - 260rpm",
+                "torque": "9.784 Nm - 6.002 Nm"
+              },
+              {
+                "gear": "2nd GEAR",
+                "ratio": "3,12:1",
+                "speed": "320rpm - 522rpm",
+                "torque": "4.868 Nm - 2.986 Nm"
+              },
+              {
+                "gear": "3rd GEAR",
+                "ratio": "1,75:1",
+                "speed": "571rpm - 930rpm",
+                "torque": "2.730 Nm - 1.675 Nm"
+              },
+              {
+                "gear": "4th GEAR",
+                "ratio": "1,00:1",
+                "speed": "1.000rpm - 1.630rpm",
+                "torque": "1.560Nm - 957Nm"
+              }
+            ]
+          },
+          "tower": {
+            "drilling_angle": "45° Horizontal - 90° Vertical",
+            "feed_length": "335cm",
+            "pulling_force": "18.000kg",
+            "pushing_force": "24.000 kg",
+            "tower_features": [
+              "Telescopic Opening Tower",
+              "6m Pulling Capacity",
+              "Independent 2 Hydraulic Tower Opening Pistons",
+              "Hydraulic Side Sliding Morset",
+              "Main Winch Mounted on Tower",
+              "Emergency Safety Rope"
+            ]
+          },
+          "winch_and_rope_system": {
+            "main_winch": [
+              "Fixed Speed Hydraulic Driven Drum Motor",
+              "18.000 Kg Pulling Capacity",
+              "15m/min Pulling Speed",
+              "18mm Diameter Steel Rope"
+            ],
+            "wireline_winch": [
+              "37 kN Empty Drum Force",
+              "8.9 kN Full Drum Force",
+              "130m/min Empty Drum Speed",
+              "550m/min Full Drum Speed",
+              "6 mm Diameter, 1.600m Steel Rope"
+            ]
+          },
+          "track": "TRACKONE SRL 12TON"
+        }
+      },
+      {
+        "name": "MD-1000",
+        "imageUrl": "/md2500.jpeg",
+        "capacities": {
+          "rods": [
+            {
+              "type": "PWL",
+              "diameter": "114,3 mm",
+              "depth": "900 m",
+              "depth_ft": "2,952 ft"
+            },
+            {
+              "type": "HWL",
+              "diameter": "88,9 mm",
+              "depth": "1,500 m",
+              "depth_ft": "4,920 ft"
+            },
+            {
+              "type": "NWL",
+              "diameter": "69,9 mm",
+              "depth": "2,000 m",
+              "depth_ft": "6,560 ft"
+            },
+            {
+              "type": "BWL",
+              "diameter": "54 mm",
+              "depth": "2,500 m",
+              "depth_ft": "8,200 ft"
+            }
+          ]
+        },
+        "details": {
+          "motor": {
+            "motor": "Cummins, Volvo, Iveco, Ford",
+            "motor_capacity": "6.7 Lt",
+            "max_power": "280Hp @2100 rpm",
+            "fuel_tank_capacity": "200 Lt",
+            "emission_certificate": "Tier 3-4 Certified",
+            "motor_torque": "1700 Nm @ 1300 rpm",
+            "control_unit": "ECM/MECHANIC"
+          },
+          "hydraulic_system": {
+            "main_hydraulic_pump": {
+              "type": "Variable flow axial piston - Load Sensing",
+              "flow_rate": "112cc",
+              "pressure": "350 bar"
+            },
+            "secondary_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "45 cc",
+              "pressure": "350 bar"
+            },
+            "third_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "28 cc",
+              "pressure": "280 bar"
+            },
+            "fourth_pump": {
+              "type": "GEAR",
+              "flow_rate": "19 cc",
+              "pressure": "200 bar"
+            },
+            "fifth_pump": {
+              "type": "GEAR",
+              "flow_rate": "8 cc",
+              "pressure": "200 bar"
+            },
+            "wireline_hydromotor": "400 cc",
+            "mud_pump_hydromotor": "800 cc",
+            "main_winch_hydromotor": "80 cc",
+            "hydraulic_control_panels": "190 LITERS",
+            "hydraulic_tank_capacity": "400 Liters",
+            "cooler": "DOUBLE SYSTEM COOLING",
+            "filters": "TANK RETURN, SUCTION, PRESSURE, MORSET"
+          },
+          "morse_module": {
+            "rotation_motor": "140 cc",
+            "morse_inner_diameter": "119mm",
+            "jaw": "7 pieces",
+            "jaw_holding_force": "184.700 N",
+            "jaw_type": "HYDRAULIC CLAMP SPRING OPEN"
+          },
+          "mechanical_transmission": {
+            "main_gear_ratio": "2:1",
+            "gearbox_ratios": [
+              {
+                "gear": "1st GEAR",
+                "ratio": "6,27:1",
+                "speed": "160rpm - 260rpm",
+                "torque": "9.784 Nm - 6.002 Nm"
+              },
+              {
+                "gear": "2nd GEAR",
+                "ratio": "3,12:1",
+                "speed": "320rpm - 522rpm",
+                "torque": "4.868 Nm - 2.986 Nm"
+              },
+              {
+                "gear": "3rd GEAR",
+                "ratio": "1,75:1",
+                "speed": "571rpm - 930rpm",
+                "torque": "2.730 Nm - 1.675 Nm"
+              },
+              {
+                "gear": "4th GEAR",
+                "ratio": "1,00:1",
+                "speed": "1.000rpm - 1.630rpm",
+                "torque": "1.560Nm - 957Nm"
+              }
+            ]
+          },
+          "tower": {
+            "drilling_angle": "45° Horizontal - 90° Vertical",
+            "feed_length": "335cm",
+            "pulling_force": "18.000kg",
+            "pushing_force": "24.000 kg",
+            "tower_features": [
+              "Telescopic Opening Tower",
+              "6m Pulling Capacity",
+              "Independent 2 Hydraulic Tower Opening Pistons",
+              "Hydraulic Side Sliding Morset",
+              "Main Winch Mounted on Tower",
+              "Emergency Safety Rope"
+            ]
+          },
+          "winch_and_rope_system": {
+            "main_winch": [
+              "Fixed Speed Hydraulic Driven Drum Motor",
+              "18.000 Kg Pulling Capacity",
+              "15m/min Pulling Speed",
+              "18mm Diameter Steel Rope"
+            ],
+            "wireline_winch": [
+              "37 kN Empty Drum Force",
+              "8.9 kN Full Drum Force",
+              "130m/min Empty Drum Speed",
+              "550m/min Full Drum Speed",
+              "6 mm Diameter, 1.600m Steel Rope"
+            ]
+          },
+          "track": "STRICKLAND SRL 12 TON"
+        }
+      },
+      {
+        "name": "MD-300",
+        "imageUrl": "/md2500.jpeg",
+        "capacities": {
+          "rods": [
+            {
+              "type": "PWL",
+              "diameter": "114,3 mm",
+              "depth": "600 m",
+              "depth_ft": "1,968 ft"
+            },
+            {
+              "type": "HWL",
+              "diameter": "88,9 mm",
+              "depth": "1,000 m",
+              "depth_ft": "3,280 ft"
+            },
+            {
+              "type": "NWL",
+              "diameter": "69,9 mm",
+              "depth": "1,500 m",
+              "depth_ft": "4,920 ft"
+            },
+            {
+              "type": "BWL",
+              "diameter": "54 mm",
+              "depth": "2,000 m",
+              "depth_ft": "6,560 ft"
+            }
+          ]
+        },
+        "details": {
+          "motor": {
+            "motor": "Cummins, Volvo, Iveco, Ford",
+            "motor_capacity": "6.7 Lt",
+            "max_power": "220-280 Hp @ 2200 rpm",
+            "fuel_tank_capacity": "400 Lt",
+            "emission_certificate": "Tier-3 Certified",
+            "motor_torque": "987 Nm @ 1500 RPM",
+            "control_unit": "ECM"
+          },
+          "hydraulic_system": {
+            "main_hydraulic_pump": {
+              "type": "Variable flow axial piston - Load Sensing",
+              "flow_rate": "80 cc",
+              "pressure": "280 bar"
+            },
+            "secondary_hydraulic_pump": {
+              "type": "IRON GEAR PUMP",
+              "flow_rate": "32 cc",
+              "pressure": "230 bar"
+            },
+            "third_hydraulic_pump": {
+              "type": "GEAR PUMP",
+              "flow_rate": "19 cc",
+              "pressure": "180 bar"
+            },
+            "fourth_pump": {
+              "type": "GEAR PUMP",
+              "flow_rate": "19 cc",
+              "pressure": "180 bar"
+            },
+            "fifth_pump": {
+              "type": "GEAR PUMP",
+              "flow_rate": "8 cc",
+              "pressure": "180 bar"
+            },
+            "wireline_hydromotor": "310 cc",
+            "mud_pump_hydromotor": "100 cc",
+            "main_winch_hydromotor": "80 cc",
+            "hydraulic_control_panels": "HYDRAULIC ELEMENTS FOR PANEL",
+            "hydraulic_tank_capacity": "200 Lt",
+            "cooler": "Double Cooling",
+            "filters": "TANK RETURN, SUCTION, PRESSURE, MORSET"
+          },
+          "morse_module": {
+            "rotation_motor": "80 cc",
+            "morse_inner_diameter": "119 mm",
+            "jaw": "5 pieces",
+            "jaw_holding_force": "110.700 N",
+            "jaw_type": "Hydraulic Clamp, Spring Open"
+          },
+          "mechanical_transmission": {
+            "main_gear_ratio": "2:1",
+            "gearbox_ratios": [
+              {
+                "gear": "1st Gear",
+                "ratio": "6,27:1",
+                "speed": "160 RPM",
+                "torque": "3.987 Nm"
+              },
+              {
+                "gear": "2nd Gear",
+                "ratio": "3,12:1",
+                "speed": "320 RPM",
+                "torque": "1984 Nm"
+              },
+              {
+                "gear": "3rd Gear",
+                "ratio": "1,75:1",
+                "speed": "571 RPM",
+                "torque": "1115 Nm"
+              },
+              {
+                "gear": "4th Gear",
+                "ratio": "1,00:1",
+                "speed": "1.000 RPM",
+                "torque": "634 Nm"
+              }
+            ]
+          },
+          "tower": {
+            "drilling_angle": "45° Horizontal - 90° Vertical",
+            "feed_length": "335cm",
+            "pulling_force": "12.500 kg",
+            "pushing_force": "8.000 kg",
+            "tower_features": [
+              "Telescopic Folding Tower",
+              "6m Pulling Capacity",
+              "Independent 2 Hydraulic Pistons",
+              "Hydraulic Side Sliding Morset",
+              "Main Winch Mounted on Tower",
+              "Emergency Safety Rope"
+            ]
+          },
+          "winch_and_rope_system": {
+            "main_winch": [
+              "Fixed Speed",
+              "9.000 Kg Pulling Capacity",
+              "15m/min Pulling Speed",
+              "18mm Steel Rope"
+            ],
+            "wireline_winch": [
+              "37 kN Bare Drum Force",
+              "8.9 kN Full Drum Force",
+              "130m/min Bare Drum Speed",
+              "550m/min Full Drum Speed",
+              "6 mm Diameter, 1.300m Steel Rope"
+            ]
+          },
+          "track": "STRICKLAND 8 - 12 Ton",
+          "mud_pump": {
+            "type": "Triplex",
+            "piston_count": "3",
+            "flow_rate": "135 lt/min",
+            "working_pressure": "500 psi",
+            "max_pressure": "700 psi",
+            "piston_type": "Submersible",
+            "suction_system": "Valve Ball",
+            "suction_flange_size": "2\"",
+            "discharge_flange_size": "1 ¼\""
+          }
+        }
+      }
+    ]
+  },
+  "qualityPolicy": {
+    "title": "Our Quality Policy",
+    "qualityUnderstanding": "Our Quality Understanding",
+    "qualityUnderstandingText": [
+      "As Minex Drill, we aim to provide our customers with the highest quality service. In line with this goal, we prioritize continuous improvement and customer satisfaction.",
+      "We work as a team to raise our quality standards, continuously review our processes, and adopt innovative approaches.",
+      "We continuously review and update our quality policy to meet and exceed our customers' expectations."
+    ],
+    "qualityStandards": "Our Quality Standards",
+    "qualityStandardsText": [
+      "As Minex Drill, we fully comply with international quality standards and local regulations. We place great importance on quality control and assurance in every project.",
+      "All our employees receive continuous training to maintain and improve quality standards, and integrate these standards into our business processes."
+    ]
+  },
+  "vision": {
+    "title": "Vision and Mission",
+    "visionTitle": "Our Vision",
+    "visionText": [
+      "At Minex Drill, our vision is to be the industry leader and to provide drilling services at the highest standards with ever-evolving technology. We aim to deliver environmentally friendly, innovative solutions that prioritize occupational health and safety, exceeding our customers' expectations."
+    ],
+    "missionTitle": "Our Mission",
+    "missionText": [
+      "Our mission is to provide international standard, quality, and reliable solutions in mining exploration and drilling services. With our professional team, we complete projects on time and within budget using the latest technology. Prioritizing environmental sustainability and occupational safety, we are committed to being an exemplary organization in the industry."
+    ]
+  },
+  "services": {
+    "title": "Our Drilling Services",
+    "serviceList": [
+      {
+        "title": "Wireline Surface Mineral Core Drilling",
+        "description": "Wireline Surface Mineral Core Drilling is a coring drilling service conducted on the surface."
+      },
+      {
+        "title": "Wireline Underground Mineral Core Drilling",
+        "description": "Wireline Underground Mineral Core Drilling is a coring drilling service conducted underground."
+      },
+      {
+        "title": "Air and Mud Rotary Drilling",
+        "description": "Air and Mud Rotary Drilling is a rotary drilling service conducted using air and mud."
+      },
+      {
+        "title": "Conventional Core Drilling",
+        "description": "Conventional Core Drilling is a coring drilling service conducted using traditional methods."
+      },
+      {
+        "title": "Reverse Circulation Drilling",
+        "description": "Reverse Circulation Drilling is a drilling service conducted using the reverse circulation method."
+      },
+      {
+        "title": "Rapid Drilling for Grade Control",
+        "description": "Rapid Drilling for Grade Control is a drilling service conducted for quick grade control."
+      },
+      {
+        "title": "Geotechnical Drilling Services",
+        "description": "Geotechnical Drilling Services are drilling services conducted for geotechnical purposes."
+      },
+      {
+        "title": "RAB Drilling Services",
+        "description": "RAB Drilling Services provide quality results."
+      }
+    ]
+  },
+  "head": {
+    "title": "Minex Drill",
+    "description": "Building the future today with our sense of responsibility",
+    "keywords": "Professional Solutions"
+  },
+  "home": {
+    "professionalSolutions": "Professional Solutions",
+    "buildingFuture": "Building the future today with our sense of responsibility.",
+    "machines": "Our Machines",
+    "innovativeTechnology": "Innovative Technology",
+    "investFuture": "Invest in the future with our cutting-edge machines.",
+    "details": "Details",
+    "qualityService": "Quality Service",
+    "qualityServiceDesc": "We provide reliable and excellent results in every project with our quality service approach.",
+    "solutionFocus": "Solution Focus",
+    "solutionFocusDesc": "With our best solutions, we complete our operations successfully and with excellent results."
+  }
+}

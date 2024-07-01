@@ -1,14 +1,20 @@
-export default function Head() {
+'use client';
+
+import { useTranslations } from 'next-intl';
+import Head from 'next/head';
+
+const CustomHead = () => {
+  const t = useTranslations('head');
+
   return (
-    <>
-      <title>Minex Drill</title>
+    <Head>
+      <title>{t('title')}</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Sorumluluğumuzun bilinciyle yarını bugünden inşa ediyoruz" />
-      {/* <meta name="description" content="Minex Drill ile en son teknolojiye sahip makinelerimizle profesyonel çözümler sunuyoruz. Geleceğe yatırım yapın."> */}
-      <meta name="keywords" content="Profesyonel Çözümler, Sondaj,Drilling,Drill,Maden,Yenilikçi Teknoloji, Endüstriyel Makineler, Makinelerimiz, Geleceğe Yatırım"/>
+      <meta name="description" content={t('description')} />
+      <meta name="keywords" content={t('keywords')} />
       <link rel="icon" href="logo.png" />
-
-
-    </>
-  )
+    </Head>
+  );
 }
+
+export default CustomHead;
