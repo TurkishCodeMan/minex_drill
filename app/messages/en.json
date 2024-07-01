@@ -570,5 +570,22 @@
     "qualityServiceDesc": "We provide reliable and excellent results in every project with our quality service approach.",
     "solutionFocus": "Solution Focus",
     "solutionFocusDesc": "With our best solutions, we complete our operations successfully and with excellent results."
+  },
+  "footer": {
+    "description": "Minex Drill provides services with an experienced and dedicated operations team for both domestic and international projects. We offer drilling services at international standards.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "services": "Our Services",
+    "machines": "Our Machines",
+    "contact": "Contact",
+    "contactInfo": "Contact Information",
+    "address": "Address: OSTİM OSB. MAHALLESİ 1125/2. SOKAK NO:10",
+    "cityCountry": "Ostim/Yenimahalle, Ankara - Turkey",
+    "phone": "Phone: 0312 354 77 71",
+    "fax": "Fax: 0312 354 77 71",
+    "mobile": "Mobile: 0501 103 06 18",
+    "email": "Email: minex@minexdrill.com",
+    "callUs": "Call Us",
+    "allRightsReserved": "© 2024 Minex Drill. All Rights Reserved."
   }
 }
