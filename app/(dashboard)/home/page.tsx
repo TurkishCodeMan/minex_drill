@@ -126,11 +126,46 @@ export default function Home() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide
+        {/* <SwiperSlide
           className="bg-cover min-h-screen flex items-center justify-center md:bg-bottom"
           style={{
             backgroundImage:
               "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/a7.jpeg')",
+          }}
+        >
+          <div className="flex flex-col overflow-hidden">
+            <div className="md:w-1/2 w-full h-screen flex items-center justify-center">
+              <div className="text-center container p-8 relative z-30">
+                <div className="flex items-center justify-center">
+                  <div className="md:flex items-center flex-col">
+                    <p className="text-6xl font-thin my-2 text-white z-10 animate-fade-in">
+                      {t('solutionFocus')}
+                    </p>
+                  </div>
+                </div>
+                <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
+                  {t('solutionFocusDesc')}
+                </p>
+                <a
+                  href="/about"
+                  className="relative inline-block mt-8 px-6 py-3 font-semibold text-white overflow-hidden group"
+                >
+                  <span className="relative z-10 text-md">{t('details')}</span>
+                  <div className="absolute hover:bg-black rounded-md inset-0 bg-red-800 transition-all duration-200 ease-in-out clip-path-right group-hover:clip-path-full"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-0 right-0 z-20">
+            <img src="/logo_white.png" alt="Bars" className="w-32 h-auto" />
+          </div>
+        </SwiperSlide> */}
+
+        <SwiperSlide
+          className="bg-cover min-h-screen flex items-center justify-center md:bg-bottom"
+          style={{
+            backgroundImage:
+              "linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/a2.JPG')",
           }}
         >
           <div className="flex flex-col overflow-hidden">
