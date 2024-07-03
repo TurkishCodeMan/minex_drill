@@ -57,7 +57,7 @@ const Header = () => {
             {t('home')}
           </a>
           <Menu as="div" className="relative">
-            <MenuButton className="text-white hover:text-yellow-500 flex items-center">
+            <MenuButton className="text-white hover:text-red-700 flex items-center">
               {t('corporate')}
               <HiChevronDown className="ml-2 h-5 w-5" />
             </MenuButton>

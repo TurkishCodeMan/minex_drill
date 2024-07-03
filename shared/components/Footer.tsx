@@ -36,10 +36,10 @@ export default function Footer() {
                 <div>
                     <h2 className="text-lg font-bold mb-4">{t('callUs')}</h2>
                     <div className="flex space-x-4">
-                        <a href="" className="text-2xl hover:text-red-500"><FaFacebook /></a>
+                        <a href="https://www.facebook.com/minexdrill?mibextid=ZbWKwL" className="text-2xl hover:text-red-500"><FaFacebook /></a>
                         <a href="" className="text-2xl hover:text-red-500"><FaTwitter /></a>
-                        <a href="" className="text-2xl hover:text-red-500"><FaInstagram /></a>
-                        <a href="" className="text-2xl hover:text-red-500"><FaLinkedin /></a>
+                        <a href="https://www.instagram.com/minexdrill/" className="text-2xl hover:text-red-500"><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/in/minex-drill-53a978234/" className="text-2xl hover:text-red-500"><FaLinkedin /></a>
                     </div>
                 </div>
             </div>

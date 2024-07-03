@@ -7,13 +7,13 @@ const CustomHead = () => {
   const t = useTranslations('head');
 
   return (
-    <Head>
+    <>
       <title>{t('title')}</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content={t('description')} />
       <meta name="keywords" content={t('keywords')} />
-      <link rel="icon" href="logo.png" />
-    </Head>
+      <link rel="icon" href="/logo.png" />
+    </>
   );
 }
 

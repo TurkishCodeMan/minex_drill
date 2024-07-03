@@ -55,6 +55,9 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <div className='my-10 w-full flex items-center justify-center'>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.64950914993!2d32.756730076029505!3d39.97158828261196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34943067cd4ff%3A0xad27569517028bb8!2sMinex%20Drill%20M%C3%BChendislik%20Sondaj%20A.%C5%9E!5e0!3m2!1str!2str!4v1719999866130!5m2!1str!2str" width="1024" height="450" style={{border:0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   );
 };
