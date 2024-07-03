@@ -25,7 +25,7 @@ const servicesData = [
     imageUrl: '/a6.jpeg',
   },
   {
-    imageUrl: '/a2.jpg',
+    imageUrl: '/a2.JPG',
   },
 ];
 
