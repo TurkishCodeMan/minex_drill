@@ -16,13 +16,13 @@ const servicesData = [
     imageUrl: '/c7.jpeg',
   },
   {
-    imageUrl: '/d6.jpeg',
+    imageUrl: '/d6_.jpg',
   },
   {
     imageUrl: '/c9.jpeg',
   },
   {
-    imageUrl: '/a6.jpeg',
+    imageUrl: '/a6_.jpg',
   },
   {
     imageUrl: '/a2.JPG',
