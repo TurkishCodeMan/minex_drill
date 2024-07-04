@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 import { Navigation, Pagination, Autoplay, Keyboard } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "./styles/custom_swiper.css";
 
 export default function Home() {
-  const t = useTranslations('home');
+  const t = useTranslations("home");
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -28,7 +28,12 @@ export default function Home() {
               "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/a6.jpeg')",
           }}
         >
-          <div className=''>            <img src="/logo_blue.png" alt="Bars" className="w-32 h-auto absolute right-0 top-1/2 mr-20 -rotate-12" />
+          <div >
+            <img
+              src="/logo_blue.png"
+              alt="Bars"
+              className="md:block hidden w-32 h-auto absolute right-0 top-1/2 mr-20 -rotate-12"
+            />
           </div>
           <div className="flex flex-col overflow-hidden">
             <div className="md:w-1/2 w-full h-screen flex items-center justify-center">
@@ -36,14 +41,13 @@ export default function Home() {
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      {t('professionalSolutions')}
+                      {t("professionalSolutions")}
                     </p>
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in mb-40">
-                  {t('buildingFuture')}
+                  {t("buildingFuture")}
                 </p>
-               
               </div>
             </div>
           </div>
@@ -53,10 +57,10 @@ export default function Home() {
         </SwiperSlide>
 
         <SwiperSlide
-          className="bg-cover min-h-screen flex items-center justify-center md:bg-center"
+          className="bg-contain min-h-screen flex items-center justify-center md:bg-bottom"
           style={{
             backgroundImage:
-              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/c15.jpeg')",
+              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/a5.jpeg')",
           }}
         >
           <div className="flex flex-col overflow-hidden">
@@ -65,14 +69,13 @@ export default function Home() {
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      {t('innovativeTechnology')}
+                      {t("innovativeTechnology")}
                     </p>
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
-                  {t('investFuture')}
+                  {t("investFuture")}
                 </p>
-                
               </div>
             </div>
           </div>
@@ -88,21 +91,19 @@ export default function Home() {
               "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/d10.jpg')",
           }}
         >
-       
           <div className="flex flex-col overflow-hidden">
             <div className="md:w-1/2 w-full h-screen flex items-center justify-center">
               <div className="text-center container p-8 relative z-30">
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      {t('qualityService')}
+                      {t("qualityService")}
                     </p>
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
-                  {t('qualityServiceDesc')}
+                  {t("qualityServiceDesc")}
                 </p>
-             
               </div>
             </div>
           </div>
@@ -164,9 +165,8 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
-                  {t('solutionFocusDesc')}
+                  {t("solutionFocusDesc")}
                 </p>
-              
               </div>
             </div>
           </div>
@@ -187,14 +187,13 @@ export default function Home() {
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      {t('solutionFocus')}
+                      {t("solutionFocus")}
                     </p>
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
-                  {t('solutionFocusDesc')}
+                  {t("solutionFocusDesc")}
                 </p>
-              
               </div>
             </div>
           </div>
