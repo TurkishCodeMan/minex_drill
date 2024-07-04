@@ -18,7 +18,7 @@ export default function Home() {
         navigation
         keyboard={{ enabled: true }}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 12000, disableOnInteraction: true }}
+        autoplay={{ delay: 7000, disableOnInteraction: true }}
         className="relative z-10"
       >
         <SwiperSlide
