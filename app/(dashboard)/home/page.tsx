@@ -25,16 +25,10 @@ export default function Home() {
           className="bg-cover  min-h-screen flex items-center justify-center md:bg-bottom"
           style={{
             backgroundImage:
-              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/a6.jpeg')",
+              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/a6_.jpg')",
           }}
         >
-          <div >
-            <img
-              src="/logo_blue.png"
-              alt="Bars"
-              className="md:block hidden w-32 h-auto absolute right-0 top-1/2 mr-20 -rotate-12"
-            />
-          </div>
+         
           <div className="flex flex-col overflow-hidden">
             <div className="md:w-1/2 w-full h-screen flex items-center justify-center">
               <div className="text-center container p-8 relative z-30">
@@ -57,10 +51,10 @@ export default function Home() {
         </SwiperSlide>
 
         <SwiperSlide
-          className="bg-contain min-h-screen flex items-center justify-center md:bg-bottom"
+          className="bg-cover min-h-screen flex items-center justify-center md:bg-bottom"
           style={{
             backgroundImage:
-              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/a5.jpeg')",
+              "linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('/c15_.jpg')",
           }}
         >
           <div className="flex flex-col overflow-hidden">
