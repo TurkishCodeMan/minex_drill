@@ -51,7 +51,7 @@
     "depthFt": "Depth (ft)",
     "machinesData": [
       {
-        "name": "MD-2500",
+        "name": "MDC-2500",
         "imageUrl": "/md2500.jpeg",
         "capacities": {
           "rods": [
@@ -194,7 +194,7 @@
         }
       },
       {
-        "name": "MD-1000",
+        "name": "MDC-1000",
         "imageUrl": "/md2500.jpeg",
         "capacities": {
           "rods": [
@@ -337,7 +337,7 @@
         }
       },
       {
-        "name": "MD-300",
+        "name": "MDC-300",
         "imageUrl": "/md2500.jpeg",
         "capacities": {
           "rods": [

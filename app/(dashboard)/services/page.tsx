@@ -16,7 +16,7 @@ const servicesData = [
     imageUrl: '/c7.jpeg',
   },
   {
-    imageUrl: '/d6_.jpg',
+    imageUrl: '/d6_.JPG',
   },
   {
     imageUrl: '/c9.jpeg',
