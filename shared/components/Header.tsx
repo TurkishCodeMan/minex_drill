@@ -191,6 +191,8 @@ const Header = () => {
           >
             {t('contact')}
           </a>
+          <LanguageSwitcher />
+
         </nav>
       </div>
     </>
