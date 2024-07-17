@@ -154,7 +154,9 @@ export default function Home() {
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      Cevherin Peşinde
+                     
+                      {t("solutionFocus")}
+                   
                     </p>
                   </div>
                 </div>
