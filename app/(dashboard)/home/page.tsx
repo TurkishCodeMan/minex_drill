@@ -183,12 +183,12 @@ export default function Home() {
                 <div className="flex items-center justify-center">
                   <div className="md:flex items-center flex-col">
                     <p className="text-6xl font-bold my-2 text-white z-10 animate-fade-in">
-                      {t("solutionFocus")}
+                     
                     </p>
                   </div>
                 </div>
                 <p className="text-xl mt-4 text-white relative z-10 animate-fade-in">
-                  {t("solutionFocusDesc")}
+          
                 </p>
               </div>
             </div>
