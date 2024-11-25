@@ -51,6 +51,294 @@
     "depthFt": "Depth (ft)",
     "machinesData": [
       {
+        "name": "MRC-1200-M",
+        "imageUrl": "/mrc120.png",
+        "capacities": {
+          "rods": [
+            {
+              "diameter": "114,3 mm",
+              "depth": "400 m",
+              "depth_ft": "1,312 ft"
+            },
+            {
+              "diameter": "88,9 mm",
+              "depth": "800 m",
+              "depth_ft": "2,624 ft"
+            },
+            {
+              "diameter": "69,9 mm",
+              "depth": "1,200 m",
+              "depth_ft": "3,936 ft"
+            },
+            {
+              "diameter": "54 mm",
+              "depth": "1,500 m",
+              "depth_ft": "4,920 ft"
+            },
+            {
+              "diameter": "RC 4’’",
+              "depth": "250 m",
+              "depth_ft": "820 ft"
+            }
+          ]
+        },
+        "details": {
+          "motor": {
+            "motor": "Cummins, Ford, Iveco, Volvo",
+            "motor_capacity": "8.9 Lt",
+            "max_power": "400Hp @2100 rpm",
+            "fuel_tank_capacity": "400 Lt",
+            "emission_certificate": "Tier3-4 Certified",
+            "motor_torque": "1700 Nm @ 1300 rpm",
+            "control_unit": "Electronic Control (ECM)"
+          },
+          "hydraulic_system": {
+            "main_hydraulic_pump": {
+              "type": "Variable flow axial piston - Load Sensing",
+              "flow_rate": "160cc",
+              "pressure": "350 bar"
+            },
+            "secondary_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "45 cc",
+              "pressure": "350 bar"
+            },
+            "third_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "28 cc",
+              "pressure": "280 bar"
+            },
+            "fourth_pump": {
+              "type": "GEAR",
+              "flow_rate": "19 cc",
+              "pressure": "200 bar"
+            },
+            "fifth_pump": {
+              "type": "GEAR",
+              "flow_rate": "8 cc",
+              "pressure": "200 bar"
+            },
+            "wireline_hydromotor": "400 cc",
+            "mud_pump_hydromotor": "160 cc",
+            "main_winch_hydromotor": "80 cc",
+            "hydraulic_control_panels": "HYDRAULIC ELEMENTS FOR PANEL",
+            "hydraulic_tank_capacity": "400 LT",
+            "cooler": "DOUBLE SYSTEM COOLING",
+            "filters": "TANK RETURN, SUCTION, PRESSURE, MORSET"
+          },
+          "morse_module": {
+            "rotation_motor": "160 cc",
+            "morse_inner_diameter": "119mm",
+            "jaw": "7 pieces",
+            "jaw_holding_force": "184.700 N",
+            "jaw_type": "HYDRAULIC CLAMP SPRING OPEN"
+          },
+          "mechanical_transmission": {
+            "main_gear_ratio": "2:1",
+            "gearbox_ratios": [
+              {
+                "gear": "1st GEAR",
+                "ratio": "6,27:1",
+                "speed": "160rpm - 260rpm",
+                "torque": "9.784 Nm - 6.002 Nm"
+              },
+              {
+                "gear": "2nd GEAR",
+                "ratio": "3,12:1",
+                "speed": "320rpm - 522rpm",
+                "torque": "4.868 Nm - 2.986 Nm"
+              },
+              {
+                "gear": "3rd GEAR",
+                "ratio": "1,75:1",
+                "speed": "571rpm - 930rpm",
+                "torque": "2.730 Nm - 1.675 Nm"
+              },
+              {
+                "gear": "4th GEAR",
+                "ratio": "1,00:1",
+                "speed": "1.000rpm - 1.630rpm",
+                "torque": "1.560Nm - 957Nm"
+              }
+            ]
+          },
+          "tower": {
+            "drilling_angle": "45° Horizontal - 90° Vertical",
+            "feed_length": "335cm",
+            "pulling_force": "18.000kg",
+            "pushing_force": "24.000 kg",
+            "tower_features": [
+              "Telescopic Opening Tower",
+              "6m Pulling Capacity",
+              "Independent 2 Hydraulic Tower Opening Pistons",
+              "Hydraulic Side Sliding Morset",
+              "Main Winch Mounted on Tower",
+              "Emergency Safety Rope"
+            ]
+          },
+          "winch_and_rope_system": {
+            "main_winch": [
+              "Fixed Speed Hydraulic Driven Drum Motor",
+              "18.000 Kg Pulling Capacity",
+              "15m/min Pulling Speed",
+              "18mm Diameter Steel Rope"
+            ],
+            "wireline_winch": [
+              "37 kN Empty Drum Force",
+              "8.9 kN Full Drum Force",
+              "130m/min Empty Drum Speed",
+              "550m/min Full Drum Speed",
+              "6 mm Diameter, 1.600m Steel Rope"
+            ]
+          },
+          "track": "TRACKONE SRL 12TON"
+        }
+      },
+      {
+        "name": "MRC-2000-M",
+        "imageUrl": "/mrc200.png",
+        "capacities": {
+          "rods": [
+            {
+              "diameter": "114,3 mm",
+              "depth": "750 m",
+              "depth_ft": "2,460 ft"
+            },
+            {
+              "diameter": "88,9 mm",
+              "depth": "1,200 m",
+              "depth_ft": "3,936 ft"
+            },
+            {
+              "diameter": "69,9 mm",
+              "depth": "2,000 m",
+              "depth_ft": "6,560 ft"
+            },
+            {
+              "diameter": "54 mm",
+              "depth": "2,500 m",
+              "depth_ft": "8,200 ft"
+            },
+            {
+              "diameter": "RC 5’’",
+              "depth": "400 m",
+              "depth_ft": "1,312 ft"
+            }
+          ]
+        },
+        "details": {
+          "motor": {
+            "motor": "Cummins, Ford, Iveco, Volvo",
+            "motor_capacity": "8.9 Lt",
+            "max_power": "400Hp @2100 rpm",
+            "fuel_tank_capacity": "400 Lt",
+            "emission_certificate": "Tier3-4 Certified",
+            "motor_torque": "1700 Nm @ 1300 rpm",
+            "control_unit": "Electronic Control (ECM)"
+          },
+          "hydraulic_system": {
+            "main_hydraulic_pump": {
+              "type": "Variable flow axial piston - Load Sensing",
+              "flow_rate": "160cc",
+              "pressure": "350 bar"
+            },
+            "secondary_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "45 cc",
+              "pressure": "350 bar"
+            },
+            "third_hydraulic_pump": {
+              "type": "PISTON",
+              "flow_rate": "28 cc",
+              "pressure": "280 bar"
+            },
+            "fourth_pump": {
+              "type": "GEAR",
+              "flow_rate": "19 cc",
+              "pressure": "200 bar"
+            },
+            "fifth_pump": {
+              "type": "GEAR",
+              "flow_rate": "8 cc",
+              "pressure": "200 bar"
+            },
+            "wireline_hydromotor": "400 cc",
+            "mud_pump_hydromotor": "160 cc",
+            "main_winch_hydromotor": "80 cc",
+            "hydraulic_control_panels": "HYDRAULIC ELEMENTS FOR PANEL",
+            "hydraulic_tank_capacity": "400 LT",
+            "cooler": "DOUBLE SYSTEM COOLING",
+            "filters": "TANK RETURN, SUCTION, PRESSURE, MORSET"
+          },
+          "morse_module": {
+            "rotation_motor": "160 cc",
+            "morse_inner_diameter": "119mm",
+            "jaw": "7 pieces",
+            "jaw_holding_force": "184.700 N",
+            "jaw_type": "HYDRAULIC CLAMP SPRING OPEN"
+          },
+          "mechanical_transmission": {
+            "main_gear_ratio": "2:1",
+            "gearbox_ratios": [
+              {
+                "gear": "1st GEAR",
+                "ratio": "6,27:1",
+                "speed": "160rpm - 260rpm",
+                "torque": "9.784 Nm - 6.002 Nm"
+              },
+              {
+                "gear": "2nd GEAR",
+                "ratio": "3,12:1",
+                "speed": "320rpm - 522rpm",
+                "torque": "4.868 Nm - 2.986 Nm"
+              },
+              {
+                "gear": "3rd GEAR",
+                "ratio": "1,75:1",
+                "speed": "571rpm - 930rpm",
+                "torque": "2.730 Nm - 1.675 Nm"
+              },
+              {
+                "gear": "4th GEAR",
+                "ratio": "1,00:1",
+                "speed": "1.000rpm - 1.630rpm",
+                "torque": "1.560Nm - 957Nm"
+              }
+            ]
+          },
+          "tower": {
+            "drilling_angle": "45° Horizontal - 90° Vertical",
+            "feed_length": "335cm",
+            "pulling_force": "18.000kg",
+            "pushing_force": "24.000 kg",
+            "tower_features": [
+              "Telescopic Opening Tower",
+              "6m Pulling Capacity",
+              "Independent 2 Hydraulic Tower Opening Pistons",
+              "Hydraulic Side Sliding Morset",
+              "Main Winch Mounted on Tower",
+              "Emergency Safety Rope"
+            ]
+          },
+          "winch_and_rope_system": {
+            "main_winch": [
+              "Fixed Speed Hydraulic Driven Drum Motor",
+              "18.000 Kg Pulling Capacity",
+              "15m/min Pulling Speed",
+              "18mm Diameter Steel Rope"
+            ],
+            "wireline_winch": [
+              "37 kN Empty Drum Force",
+              "8.9 kN Full Drum Force",
+              "130m/min Empty Drum Speed",
+              "550m/min Full Drum Speed",
+              "6 mm Diameter, 1.600m Steel Rope"
+            ]
+          },
+          "track": "TRACKONE SRL 12TON"
+        }
+      },
+      {
         "name": "MDC-2500",
         "imageUrl": "/md2500.jpeg",
         "capacities": {
