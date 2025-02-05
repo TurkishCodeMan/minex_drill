@@ -25,6 +25,12 @@ const ISGveCevre = () => {
             </div>
           </div>
           <div className="w-full ">
+          <img
+              src="/isg.jpeg"
+              className="rounded-lg mb-4"
+              alt={t('title')}
+            />
+          
             <img
               src="/a9.png"
               className="rounded-lg mb-4"
@@ -40,6 +46,10 @@ const ISGveCevre = () => {
               className="rounded-lg mb-4"
               alt={t('title')}
             />
+            
+            
+
+          
           </div>
         </div>
       </div>
