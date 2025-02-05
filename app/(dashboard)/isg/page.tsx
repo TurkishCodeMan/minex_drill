@@ -36,11 +36,7 @@ const ISGveCevre = () => {
               className="rounded-lg mb-4"
               alt={t('title')}
             />
-            <img
-              src="/a12.png"
-              className="rounded-lg mb-4"
-              alt={t('title')}
-            />
+         
             <img
               src="/a11.png"
               className="rounded-lg mb-4"
