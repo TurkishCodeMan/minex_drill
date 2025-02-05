@@ -111,7 +111,7 @@ const Header = () => {
           <a href="/catalog" className="text-white hover:text-red-700">
             {t('catalog')}
           </a>
-          <a href="/isg" className="text-white hover:text-red-700">
+          <a href="/isg" className="text-green-500 hover:text-red-700">
             {t('isg')}
           </a>
           <a href="/contact" className="text-white hover:text-red-700">
@@ -191,7 +191,7 @@ const Header = () => {
           >
             {t('catalog')}
           </a>
-          <a href="/isg" className="hover:text-red-700" onClick={toggleMenu}>
+          <a href="/isg" className="text-green-500 hover:text-red-700" onClick={toggleMenu}>
             {t('isg')}
           </a>
           <a
