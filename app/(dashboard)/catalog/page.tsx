@@ -6,9 +6,6 @@ export default function CatalogPage() {
   return (
     <div className="flex flex-col items-center min-h-screen p-4 bg-gray-50">
       <div className="w-full max-w-6xl bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
-          Minex Drill Katalog
-        </h1>
         
         <div className="w-full aspect-[1/1.4] relative">
           <iframe
