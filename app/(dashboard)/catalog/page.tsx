@@ -9,7 +9,7 @@ export default function CatalogPage() {
         
         <div className="w-full aspect-[1/1.4] relative">
           <iframe
-            src="/catalog.pdf"
+            src="/catalog.pdf#toolbar=0&navpanes=0&scrollbar=1&statusbar=0&messages=0&view=FitH"
             className="w-full h-full absolute inset-0 rounded-lg border border-gray-200"
             style={{ minHeight: "800px" }}
           />
