@@ -842,16 +842,38 @@
         "description": "RAB Sondaj Hizmetleriminde kaliteli sonuçlar."
       }
     ]
-  }
-  ,
+  },
   "head": {
     "title": "Minex Drill",
     "description": "Sorumluluğumuzun bilinciyle yarını bugünden inşa ediyoruz",
     "keywords": "Profesyonel Çözümler"
   },
   "home": {
-    "professionalSolutions": "Profesyonel Çözümler",
-    "buildingFuture": "Sorumluluğumuzun bilinciyle yarını bugünden inşa ediyoruz.",
+    "slide1": "Profesyonel çözümler sunar",
+    "slide2": "Son teknolojik makineler",
+    "slide3": "Sorumluluğumuzun bilinciyle yarını bugünden inşa ediyoruz",
+    "slide4": "Cevherin peşinde",
+    "slide5": "Kaliteli hizmet anlayışımızla 7/24 her projede güvenilir ve mükemmel hizmet sunuyoruz.",
+    "slide6": "Her koşulda en iyi çözümlerimiz ile, operasyonlarımızı başarılı ve mükemmel sonuçlarla tamamlıyoruz.",
+    "slide7": "En son teknoloji ile donatılmış makinelerimizle hizmetinizdeyiz.",
+    "slide8": "",
+    "slideAlt1": "Slide 1",
+    "slideAlt2": "Slide 2",
+    "slideAlt3": "Slide 3",
+    "slideAlt4": "Slide 4",
+    "slideAlt5": "Slide 5",
+    "slideAlt6": "Slide 6",
+    "slideAlt7": "Slide 7",
+    "slideAlt8": "Slide 8",
+    "professionalSolutions": "Profesyonel çözümler sunar",
+    "buildingFuture": "Yarını bugünden inşa ediyoruz",
+    "innovativeTechnology": "Yenilikçi teknoloji",
+    "investFuture": "Geleceğe yatırım",
+    "qualityService": "Kaliteli hizmet",
+    "qualityServiceDesc": "7/24 güvenilir çözümler",
+    "solutionFocus": "Çözüm odaklı",
+    "solutionFocusDesc": "Her koşulda en iyi çözümler",
+    "details": "Detaylar",
     "machines": "Makinalarımız",
     "innovativeTechnology": "Yenilikçi Teknoloji",
     "investFuture": "En son teknoloji ile donatılmış makinelerimizle hizmetinizdeyiz.",
