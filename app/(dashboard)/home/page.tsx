@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import type { Swiper as SwiperType } from 'swiper';
 
 // Daktilo animasyonu için geliştirilmiş özel bileşen
-const TypewriterText = ({ text, key }: { text: string, key: number }) => {
+const TypewriterText = ({ text, key, isRight }: { text: string, key: number, isRight?: boolean }) => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
@@ -40,14 +40,16 @@ const TypewriterText = ({ text, key }: { text: string, key: number }) => {
     }
   }, [currentIndex, text]);
 
+  const alignmentClass = isRight ? "items-end justify-end" : "items-center justify-center";
+
   return (
     <motion.div 
-      className="min-h-[120px] flex items-center justify-center"
+      className={`min-h-[120px] flex ${alignmentClass}`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-white text-xl md:text-2xl font-serif italic font-semibold text-center max-w-[600px] drop-shadow-lg">
+      <p className={`text-white text-xl md:text-2xl font-serif italic font-semibold ${isRight ? 'text-right' : 'text-center'} max-w-[600px] drop-shadow-lg`}>
         {displayText}
         <motion.span 
           animate={{ opacity: isComplete ? 0 : 1 }}
@@ -114,6 +116,12 @@ export default function Home() {
     "/8.png"
   ];
 
+  // Pozisyon kontrolü - tek sayılarda sol, çift sayılarda sağ
+  const isPositionRight = activeIndex % 2 === 1;
+  const positionClass = isPositionRight 
+    ? "right-8 md:right-12 left-auto text-right" 
+    : "left-8 md:left-12 right-auto text-left";
+
   return (
     <section className="relative z-0 shadow-md bg-cover bg-center min-h-screen flex items-center justify-center text-white">
       <div className="w-full h-screen">
@@ -146,21 +154,21 @@ export default function Home() {
         </Swiper>
       </div>
       
-      {/* Logo - geliştirilmiş animasyon */}
+      {/* Logo - dönüşümlü pozisyonlarla */}
       <AnimatePresence mode="wait">
         {activeIndex !== 7 && (
           <motion.div
             key={`logo-${activeIndex}`}
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: isPositionRight ? 100 : -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -50, opacity: 0 }}
+            exit={{ x: isPositionRight ? 50 : -50, opacity: 0 }}
             transition={{ 
               type: "spring", 
               stiffness: 100, 
               damping: 15, 
               delay: 0.3 
             }}
-            className="absolute left-8 md:left-12 bottom-36 z-30"
+            className={`absolute ${positionClass} bottom-36 z-30`}
           >
             <Image 
               src="/logo_white.png" 
@@ -173,21 +181,24 @@ export default function Home() {
         )}
       </AnimatePresence>
       
-      {/* Yazı animasyonu - geliştirilmiş versiyon */}
+      {/* Yazı animasyonu - dönüşümlü pozisyonlarla */}
       <AnimatePresence mode="wait">
-        <motion.div
-          key={`text-${activeIndex}`}
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="absolute left-8 md:left-12 bottom-20 z-30 p-6 max-w-[700px]"
-        >
-          <TypewriterText 
-            text={slideTexts[activeIndex]} 
-            key={activeIndex}
-          />
-        </motion.div>
+        {activeIndex !== 7 && (
+          <motion.div
+            key={`text-${activeIndex}`}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className={`absolute ${positionClass} bottom-20 z-30 p-6 max-w-[700px]`}
+          >
+            <TypewriterText 
+              text={slideTexts[activeIndex]} 
+              key={activeIndex}
+              isRight={isPositionRight}
+            />
+          </motion.div>
+        )}
       </AnimatePresence>
     </section>
   );
