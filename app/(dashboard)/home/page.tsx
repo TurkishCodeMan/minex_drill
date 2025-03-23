@@ -47,7 +47,7 @@ const TypewriterText = ({ text, key }: { text: string, key: number }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className="text-white text-2xl md:text-3xl font-serif italic font-semibold text-center max-w-[600px] drop-shadow-lg">
+      <p className="text-white text-xl md:text-2xl font-serif italic font-semibold text-center max-w-[600px] drop-shadow-lg">
         {displayText}
         <motion.span 
           animate={{ opacity: isComplete ? 0 : 1 }}
@@ -70,26 +70,18 @@ const SlideContent = ({ index, currentIndex, imageUrl, alt }: {
   
   return (
     <div className="relative w-full h-screen overflow-hidden">
-      <motion.div
-        initial={{ scale: 1.1, opacity: 0.8 }}
-        animate={{ 
-          scale: isActive ? 1 : 1.1,
-          opacity: isActive ? 1 : 0.8
-        }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        className="w-full h-full"
-      >
-        <Image
-          src={imageUrl}
-          alt={alt}
-          fill
-          priority
-          className="object-cover"
-        />
-      </motion.div>
-      
-      {/* Siyah overlay gradyan efekti */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70" />
+      {isActive && (
+        <div className="w-full h-full">
+          <Image
+            src={imageUrl}
+            alt={alt}
+            fill
+            priority
+            quality={100}
+            className="object-cover object-center"
+          />
+        </div>
+      )}
     </div>
   );
 };
@@ -156,27 +148,29 @@ export default function Home() {
       
       {/* Logo - geliştirilmiş animasyon */}
       <AnimatePresence mode="wait">
-        <motion.div
-          key={`logo-${activeIndex}`}
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -50, opacity: 0 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 100, 
-            damping: 15, 
-            delay: 0.3 
-          }}
-          className="absolute left-8 md:left-12 bottom-48 z-30"
-        >
-          <Image 
-            src="/logo_white.png" 
-            alt={t("logoAlt") || "Minex Drill Logo"}
-            width={280} 
-            height={100}
-            className="object-contain drop-shadow-2xl mb-12"
-          />
-        </motion.div>
+        {activeIndex !== 7 && (
+          <motion.div
+            key={`logo-${activeIndex}`}
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -50, opacity: 0 }}
+            transition={{ 
+              type: "spring", 
+              stiffness: 100, 
+              damping: 15, 
+              delay: 0.3 
+            }}
+            className="absolute left-8 md:left-12 bottom-36 z-30"
+          >
+            <Image 
+              src="/logo_white.png" 
+              alt={t("logoAlt") || "Minex Drill Logo"}
+              width={160} 
+              height={100}
+              className="object-contain drop-shadow-2xl mb-14"
+            />
+          </motion.div>
+        )}
       </AnimatePresence>
       
       {/* Yazı animasyonu - geliştirilmiş versiyon */}

@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <>
     <header
-      className={`w-full z-50 transition-all duration-500 ease-in-out clip-triangle  ${
+      className={`w-full z-50 transition-all duration-500 ease-in-out clip-triangle pr-10  ${
         isSticky
           ? "fixed top-0 bg-black shadow-lg py-4 transform translate-y-0"
           : "relative bg-black shadow-md py-5 transform translate-y-0 rotate-0"
