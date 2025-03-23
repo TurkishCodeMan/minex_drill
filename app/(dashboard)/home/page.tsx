@@ -44,12 +44,12 @@ const TypewriterText = ({ text, key, isRight }: { text: string, key: number, isR
 
   return (
     <motion.div 
-      className={`min-h-[120px] flex ${alignmentClass}`}
+      className={`min-h-[80px] flex ${alignmentClass} mb-2`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <p className={`text-white text-xl md:text-2xl font-serif italic font-semibold ${isRight ? 'text-right' : 'text-center'} max-w-[600px] drop-shadow-lg`}>
+      <p className={`text-white text-base md:text-lg font-serif italic font-semibold ${isRight ? 'text-right' : 'text-center'} max-w-[950px] drop-shadow-lg whitespace-nowrap`}>
         {displayText}
         <motion.span 
           animate={{ opacity: isComplete ? 0 : 1 }}
@@ -122,6 +122,7 @@ export default function Home() {
     ? "right-8 md:right-12 left-auto text-right" 
     : "left-8 md:left-12 right-auto text-left";
 
+  const pb_margin=isPositionRight?"mb-12":'mb-6'
   return (
     <section className="relative z-0 shadow-md bg-cover bg-center min-h-screen flex items-center justify-center text-white">
       <div className="w-full h-screen">
@@ -168,14 +169,14 @@ export default function Home() {
               damping: 15, 
               delay: 0.3 
             }}
-            className={`absolute ${positionClass} bottom-36 z-30`}
+            className={`absolute ${positionClass} bottom-24 z-30`}
           >
             <Image 
               src="/logo_white.png" 
               alt={t("logoAlt") || "Minex Drill Logo"}
-              width={160} 
-              height={100}
-              className="object-contain drop-shadow-2xl mb-14"
+              width={120} 
+              height={70}
+              className="object-contain drop-shadow-2xl mb-12"
             />
           </motion.div>
         )}
@@ -190,7 +191,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className={`absolute ${positionClass} bottom-20 z-30 p-6 max-w-[700px]`}
+            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[550px] ${pb_margin}`}
           >
             <TypewriterText 
               text={slideTexts[activeIndex]} 
