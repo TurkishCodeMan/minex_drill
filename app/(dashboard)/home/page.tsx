@@ -101,7 +101,8 @@ export default function Home() {
     t("slide5"),
     t("slide6"),
     t("slide7"),
-    t("slide8")
+    t("slide8"),
+    t('slide9')
   ];
 
   // Slidelardaki görseller
@@ -113,7 +114,8 @@ export default function Home() {
     "/5.png",
     "/6.png",
     "/7.png",
-    "/8.png"
+    "/8.png",
+    "/sertifika.png"
   ];
 
   // Pozisyon kontrolü - tek sayılarda sol, çift sayılarda sağ
@@ -157,7 +159,7 @@ export default function Home() {
       
       {/* Logo - dönüşümlü pozisyonlarla */}
       <AnimatePresence mode="wait">
-        {activeIndex !== 7 && activeIndex!=5 && (
+        {activeIndex !== 7 && activeIndex!=5 && activeIndex !== 8 && (
           <motion.div
             key={`logo-${activeIndex}`}
             initial={{ x: isPositionRight ? 100 : -100, opacity: 0 }}
@@ -172,11 +174,11 @@ export default function Home() {
             className={`absolute ${positionClass} bottom-24 z-30`}
           >
             <Image 
-              src="/logo_white.png" 
+              src="/minex_beyaz_logo.png"
               alt={t("logoAlt") || "Minex Drill Logo"}
               width={120} 
               height={70}
-              className="object-contain drop-shadow-2xl mb-12"
+              className="object-contain drop-shadow-2xl mb-4"
             />
           </motion.div>
         )}
@@ -191,7 +193,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin} ${activeIndex==5?'mb-6':''}`}
+            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin} ${activeIndex==5?'mb-10':''}`}
           >
             <TypewriterText 
               text={slideTexts[activeIndex]} 

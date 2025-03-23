@@ -36,18 +36,20 @@ const Header = () => {
     <header
       className={`w-full z-50 transition-all duration-500 ease-in-out clip-triangle pr-10  ${
         isSticky
-          ? "fixed top-0 bg-black shadow-lg py-4 transform translate-y-0"
-          : "relative bg-black shadow-md py-5 transform translate-y-0 rotate-0"
+          ? "fixed top-0 bg-black shadow-lg py-1 transform translate-y-0"
+          : "relative bg-black shadow-md py-1 transform translate-y-0 rotate-0"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="flex items-center px-1">
             <img
-              src="/logo_white.png"
+              src="/minex_beyaz_logo.png"
               alt="MinexDrill"
+              
+              
               className={`transition-all duration-500 ease-in-out ${
-                isSticky ? "h-10" : "h-12"
+                isSticky ? "h-20" : "h-24"
               }`}
             />
           </a>
