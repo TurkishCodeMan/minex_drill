@@ -191,7 +191,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin} ${activeIndex==5?'mb-2':''}`}
+            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin} ${activeIndex==5?'mb-6':''}`}
           >
             <TypewriterText 
               text={slideTexts[activeIndex]} 
