@@ -157,7 +157,7 @@ export default function Home() {
       
       {/* Logo - dönüşümlü pozisyonlarla */}
       <AnimatePresence mode="wait">
-        {activeIndex !== 7 && (
+        {activeIndex !== 7 && activeIndex!=5 && (
           <motion.div
             key={`logo-${activeIndex}`}
             initial={{ x: isPositionRight ? 100 : -100, opacity: 0 }}
@@ -191,7 +191,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin}`}
+            className={`absolute ${positionClass} bottom-12 z-30 p-2 max-w-[800px] ${pb_margin} ${activeIndex==5?'mb-2':''}`}
           >
             <TypewriterText 
               text={slideTexts[activeIndex]} 
