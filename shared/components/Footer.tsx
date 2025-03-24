@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className="bg-black text-white py-10 px-5">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h2 className="text-lg font-bold mb-4"><img src='/logo_white.png' width={180} alt="Minex Drill Logo"/></h2>
+                    <h2 className="text-lg font-bold mb-4"><img src='/minex_beyaz_logo.png' width={180} alt="Minex Drill Logo"/></h2>
                     <p>{t('description')}</p>
                 </div>
                 <div>
