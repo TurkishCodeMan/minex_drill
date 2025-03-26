@@ -4,33 +4,34 @@
 .swiper-button-next,
 .swiper-button-prev {
   color: #ffffff; /* Beyaz renk */
-  background-color: rgba(0, 0, 0, 0.3); /* Yarı şeffaf siyah arkaplan */
-  width: 50px;
-  height: 50px;
+  background-color: #990000; /* Bordo arkaplan */
+  width: 40px;
+  height: 40px;
   border-radius: 50%; /* Yuvarlak butonlar */
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  opacity: 0;
+  opacity: 0.75;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 22px; /* Ok ikonlarının boyutunu küçülttük */
+  font-size: 18px; /* Ok ikonlarının boyutunu küçülttük */
   font-weight: bold;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.5); /* Hover durumunda daha koyu arkaplan */
-  opacity: 1;
+  background-color: #7a0000; /* Hover durumunda daha koyu bordo */
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 /* Swiper'a hover durumunda butonları göster */
 .swiper:hover .swiper-button-next,
 .swiper:hover .swiper-button-prev {
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* İlerleme noktaları için geliştirilmiş stiller */

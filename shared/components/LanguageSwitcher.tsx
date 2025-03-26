@@ -15,16 +15,16 @@ const LanguageSwitcher = () => {
     });
   };
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-2 items-center">
       <button
         onClick={() => changeLanguage("tr")}
-        className="text-red-800 hover:text-yellow-500"
+        className="bg-red-800 text-white px-3 py-1 rounded-full hover:bg-red-700 hover:scale-110 transition-all duration-300 font-semibold text-sm"
       >
         {"TR"}
       </button>
       <button
         onClick={() => changeLanguage("en")}
-        className="text-red-800 hover:text-yellow-500"
+        className="bg-red-800 text-white px-3 py-1 rounded-full hover:bg-red-700 hover:scale-110 transition-all duration-300 font-semibold text-sm"
       >
         {"EN"}
       </button>
