@@ -53,7 +53,7 @@
     "machinesData": [
       {
         "name": "MRC-1200-M",
-        "imageUrl": "/mrc120.png",
+        "imageUrl": "/6.png",
         "capacities": {
           "rods": [
             {
@@ -197,7 +197,7 @@
       },
       {
         "name": "MRC-2000-M",
-        "imageUrl": "/mrc200.png",
+        "imageUrl": "/2.png",
         "capacities": {
           "rods": [
             {

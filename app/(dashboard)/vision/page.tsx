@@ -19,7 +19,7 @@ const Vision = () => {
             </div>
           </div>
           <div>
-            <img src="/a6_.jpg" alt="Minex Drill" className="rounded-lg" />
+            <img src="/1.png" alt="Minex Drill" className="rounded-lg" />
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
