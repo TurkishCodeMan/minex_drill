@@ -171,14 +171,14 @@ export default function Home() {
               damping: 15, 
               delay: 0.3 
             }}
-            className={`absolute ${positionClass} bottom-0 z-30 pb-5 ${isPositionRight ? 'pr-12 -bottom-6' : 'pl-12'}`}
+            className={`absolute ${positionClass} bottom-0 z-30 pb-5 ${isPositionRight ? 'pr-12 -bottom-8' : 'pl-12'}`}
           >
             <Image 
               src="/minex_beyaz_logo.png"
               alt={t("logoAlt") || "Minex Drill Logo"}
               width={120} 
               height={70}
-              className="object-contain drop-shadow-2xl mb-2"
+              className="object-contain drop-shadow-2xl mb-2 scale-x-75"
             />
           </motion.div>
         )}
