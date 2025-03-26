@@ -34,10 +34,10 @@ const Header = () => {
   return (
     <>
     <header
-      className={`w-full z-50 transition-all duration-500 ease-in-out clip-triangle pr-10  ${
+      className={`w-full z-50 transition-all duration-500 ease-in-out clip-triangle pr-8  ${
         isSticky
-          ? "fixed top-0 bg-black shadow-lg py-1 transform translate-y-0"
-          : "relative bg-black shadow-md py-1 transform translate-y-0 rotate-0"
+          ? "fixed top-0 bg-black shadow-lg  transform translate-y-0"
+          : "relative bg-black shadow-md transform translate-y-0 rotate-0"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
@@ -47,7 +47,7 @@ const Header = () => {
               src="/minex_beyaz_logo.png"
               alt="MinexDrill"
               
-              
+              width={130}
               className={`transition-all duration-500 ease-in-out ${
                 isSticky ? "h-20" : "h-24"
               }`}
