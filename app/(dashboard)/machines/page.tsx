@@ -26,7 +26,7 @@ export default function Machines() {
       <div className="relative z-0 p-16 bg-gray-100 w-full">
         <div className="flex justify-center mb-8">
           <img
-            src='/logo_white.png'
+            src='/minex_siyah_logo.png'
             alt="Minex Drill"
             width="194"
             height="149"
