@@ -52,7 +52,7 @@
     "depthFt": "Derinlik (ft)",
     "machinesData": [
       {
-        "name": "MRC-1200-M",
+        "name": "MRC-1200-M (Multipurpose)",
         "imageUrl": "/6.png",
         "capacities": {
           "rods": [
@@ -196,7 +196,7 @@
         }
       },
       {
-        "name": "MRC-2000-M",
+        "name": "MRC-2000-M (Multipurpose)",
         "imageUrl": "/2.png",
         "capacities": {
           "rods": [

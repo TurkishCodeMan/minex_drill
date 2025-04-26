@@ -70,6 +70,10 @@ const SlideContent = ({ index, currentIndex, imageUrl, alt }: {
   // Animasyonun sırası için gecikmeli çalışma
   const isActive = index === currentIndex;
   
+  // Son iki slayt için özel class tanımı
+  const isSpecialSlide = index === 7 || index === 8; // 8.png ve sertifika.png için
+  const objectFitClass = isSpecialSlide ? "object-fill" : "object-cover";
+  
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {isActive && (
@@ -80,7 +84,7 @@ const SlideContent = ({ index, currentIndex, imageUrl, alt }: {
             fill
             priority
             quality={100}
-            className="object-cover object-center"
+            className={`${objectFitClass} object-center`}
           />
         </div>
       )}
