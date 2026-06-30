@@ -866,6 +866,7 @@
     "slideAlt6": "Slide 6",
     "slideAlt7": "Slide 7",
     "slideAlt8": "Slide 8",
+    "slideAlt9": "Slide 9",
     "professionalSolutions": "Professional Solutions",
     "buildingFuture": "Building tomorrow today",
     "innovativeTechnology": "Innovative Technology",
@@ -892,7 +893,9 @@
     "machinesAlt7": "Machines",
     "machinesAlt7Desc": "Machines",
     "machinesAlt8": "Machines",
-    "machinesAlt8Desc": "Machines"
+    "machinesAlt8Desc": "Machines",
+    "watchVideo": "Promotional Video",
+    "logoAlt": "Minex Drill Logo"
   },
   "footer": {
     "description": "Minex Drill provides services with an experienced and dedicated operations team for both domestic and international projects. We offer drilling services at international standards.",

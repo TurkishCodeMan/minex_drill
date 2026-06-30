@@ -13,9 +13,10 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import type { Swiper as SwiperType } from 'swiper';
+import { Play, X } from "lucide-react";
 
 // Daktilo animasyonu için geliştirilmiş özel bileşen
-const TypewriterText = ({ text, key, isRight }: { text: string, key: number, isRight?: boolean }) => {
+const TypewriterText = ({ text, animationKey, isRight }: { text: string, animationKey: number, isRight?: boolean }) => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
@@ -25,7 +26,7 @@ const TypewriterText = ({ text, key, isRight }: { text: string, key: number, isR
     setDisplayText("");
     setCurrentIndex(0);
     setIsComplete(false);
-  }, [key]);
+  }, [animationKey]);
 
   useEffect(() => {
     if (currentIndex < text.length) {
@@ -94,6 +95,7 @@ const SlideContent = ({ index, currentIndex, imageUrl, alt }: {
 
 export default function Home() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const t = useTranslations("home");
   
   // Her slide için farklı metinler
@@ -130,7 +132,8 @@ export default function Home() {
 
   const pb_margin=isPositionRight?"mb-12":'mb-6'
   return (
-    <section className="relative z-0 shadow-md bg-cover bg-center min-h-screen flex items-center justify-center text-white">
+    <>
+      <section className="relative z-0 shadow-md bg-cover bg-center min-h-screen flex items-center justify-center text-white">
       <div className="w-full h-screen">
         <Swiper
           modules={[Navigation, Pagination, Keyboard, Autoplay, Scrollbar, A11y, EffectFade]}
@@ -202,11 +205,80 @@ export default function Home() {
             <TypewriterText 
               text={slideTexts[activeIndex]} 
               key={activeIndex}
+              animationKey={activeIndex}
               isRight={isPositionRight}
             />
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* Video Açma Butonu (Önizlemeli) */}
+      <motion.button
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        onClick={() => setIsVideoOpen(true)}
+        className="absolute bottom-8 right-8 z-40 flex flex-col items-center gap-2 group"
+      >
+        <div className="relative w-40 h-24 md:w-56 md:h-32 rounded-2xl overflow-hidden border-2 border-white/30 shadow-[0_4px_20px_rgba(0,0,0,0.5)] group-hover:scale-105 group-hover:border-white transition-all bg-black/50">
+          <video 
+            src="/ENG-Minex Drilling Tanıtım.mp4" 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay Oynat İkonu */}
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/10 transition-all">
+             <div className="w-12 h-12 md:w-14 md:h-14 bg-white/80 rounded-full flex items-center justify-center backdrop-blur-sm text-black shadow-lg">
+                <Play size={24} className="ml-1" />
+             </div>
+          </div>
+        </div>
+        <span className="font-semibold text-sm md:text-base tracking-wide whitespace-nowrap text-white drop-shadow-md bg-black/40 px-4 py-1 rounded-full backdrop-blur-sm border border-white/10 group-hover:bg-black/60 transition-colors">
+          {t("watchVideo")}
+        </span>
+      </motion.button>
     </section>
+
+    {/* Video Modal */}
+    <AnimatePresence>
+      {isVideoOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={() => setIsVideoOpen(false)}
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-8"
+        >
+          {/* Sağ Üst Kapatma Butonu */}
+          <button 
+            onClick={() => setIsVideoOpen(false)}
+            className="absolute top-4 right-4 md:top-8 md:right-8 text-white transition-colors z-[110] p-2 bg-white/10 rounded-full hover:bg-white/20 border border-white/20"
+          >
+            <X size={32} />
+          </button>
+          
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0, y: 20 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            transition={{ type: "spring", damping: 25, stiffness: 300 }}
+            onClick={(e) => e.stopPropagation()}
+            className="w-full max-w-5xl max-h-[85vh] aspect-video rounded-xl md:rounded-2xl overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] relative bg-black border border-white/10"
+          >
+            <video 
+              src="/ENG-Minex Drilling Tanıtım.mp4" 
+              controls 
+              autoPlay 
+              playsInline
+              className="w-full h-full object-contain bg-black"
+            />
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </>
   );
 }
