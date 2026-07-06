@@ -13,7 +13,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center">
             <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('whoWeAreTitle')}</h3>
+
               {t.raw('whoWeAre').map((text:any, index:any) => (
                 <p key={index} className="text-gray-600 mb-6">{text}</p>
               ))}
@@ -26,7 +26,7 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
           <div className="flex flex-col justify-center">
             <div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('whatWeDoTitle')}</h3>
+
               {t.raw('whatWeDo').map((text:any, index:any) => (
                 <p key={index} className="text-gray-600 mb-6">{text}</p>
               ))}
