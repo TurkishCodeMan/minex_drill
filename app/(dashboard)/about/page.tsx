@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 
 const AboutUs = () => {
   const t = useTranslations('about');
+  const tVision = useTranslations('vision');
 
   return (
     <div className="bg-white py-16 min-h-screen">
@@ -27,6 +28,24 @@ const AboutUs = () => {
             <div>
               <h3 className="text-xl font-semibold text-gray-700 mb-4">{t('whatWeDoTitle')}</h3>
               {t.raw('whatWeDo').map((text:any, index:any) => (
+                <p key={index} className="text-gray-600 mb-6">{text}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-red-800 mb-8">{tVision('title')}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-col">
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">{tVision('visionTitle')}</h3>
+              {tVision.raw('visionText').map((text:any, index:any) => (
+                <p key={index} className="text-gray-600 mb-6">{text}</p>
+              ))}
+            </div>
+            <div className="flex flex-col">
+              <h3 className="text-xl font-semibold text-gray-700 mb-4">{tVision('missionTitle')}</h3>
+              {tVision.raw('missionText').map((text:any, index:any) => (
                 <p key={index} className="text-gray-600 mb-6">{text}</p>
               ))}
             </div>
