@@ -100,6 +100,7 @@ export default function Home() {
   
   // Her slide için farklı metinler
   const slideTexts = [
+    t("slide0"),
     t("slide1"),
     t("slide2"),
     t("slide3"),
@@ -113,6 +114,7 @@ export default function Home() {
 
   // Slidelardaki görseller
   const slideImages = [
+    "/image0.png",
     "/1.png",
     "/2.png",
     "/3.png",
@@ -157,7 +159,7 @@ export default function Home() {
                 index={index} 
                 currentIndex={activeIndex} 
                 imageUrl={img} 
-                alt={t(`slideAlt${index + 1}`)} 
+                alt={t(`slideAlt${index}`)} 
               />
             </SwiperSlide>
           ))}
