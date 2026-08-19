@@ -44,7 +44,7 @@
     "environmentText": "Çevre koruması, Minex Drill'in öncelikli hedeflerinden biridir. Faaliyetlerimizi sürdürürken, çevreye zarar vermemek ve doğal kaynakları korumak için gereken tüm önlemleri alıyoruz. Sürdürülebilir çevre politikaları benimseyerek, gelecek nesillere temiz bir çevre bırakmayı amaçlıyoruz."
   },
   "machines": {
-    "title": "Makinalarımız",
+    "title": "Makinelerimiz",
     "details": "Detaylar",
     "rodDiameter": "Çubuk Çapı",
     "depth": "Derinlik",
@@ -893,7 +893,7 @@
     "quickLinks": "Hızlı Linkler",
     "aboutUs": "Hakkımızda",
     "services": "Hizmetlerimiz",
-    "machines": "Makinalarımız",
+    "machines": "Makinelerimiz",
     "contact": "İletişim",
     "contactInfo": "İletişim Bilgileri",
     "address": "Adres: OSTİM OSB. MAHALLESİ 1125/2. SOKAK NO:10",
