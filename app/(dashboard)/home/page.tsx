@@ -183,7 +183,7 @@ export default function Home() {
             className={`absolute ${positionClass}  z-30 pb-5 ${isPositionRight ? 'pr-12 -bottom-8' : 'pl-12 bottom-0'}`}
           >
             <Image 
-              src="/minex_beyaz_logo.png"
+              src="/beyaz_minex_logo.png"
               alt={t("logoAlt") || "Minex Drill Logo"}
               width={120} 
               height={70}

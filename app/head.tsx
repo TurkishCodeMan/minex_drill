@@ -12,7 +12,7 @@ const CustomHead = () => {
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="description" content={t('description')} />
       <meta name="keywords" content={t('keywords')} />
-      <link rel="icon" href="/minex_beyaz_logo.png" />
+      <link rel="icon" href="/beyaz_minex_logo.png" />
       
       {/* SEO için ek meta etiketleri */}
       <meta name="author" content="Minex Drill" />

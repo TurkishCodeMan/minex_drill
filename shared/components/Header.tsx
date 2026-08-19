@@ -44,7 +44,7 @@ const Header = () => {
         <div className="flex items-center">
           <a href="/" className="flex items-center px-1">
             <img
-              src="/minex_beyaz_logo.png"
+              src="/beyaz_minex_logo.png"
               alt="MinexDrill"
               
               width={130}
